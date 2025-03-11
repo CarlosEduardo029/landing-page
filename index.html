@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TaskFlow - A melhor ferramenta de produtividade para organizar sua vida">
+    <meta name="author" content="CarlosEduardo029">
+    <title>TaskFlow - Organize sua vida com facilidade</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.jpg">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botão de alternar modo escuro -->
+    <button id="theme-toggle" aria-label="Alternar modo escuro">
+        <i class="fas fa-moon theme-icon"></i>
+    </button>
+
+    <!-- Cabeçalho fixo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tasks logo-icon"></i>
+                <h1 class="logo-text">TaskFlow</h1>
+            </div>
+            
+            <nav class="nav">
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#recursos" class="nav-link"><i class="fas fa-cube"></i> Recursos</a></li>
+                    <li><a href="#precos" class="nav-link"><i class="fas fa-tag"></i> Preços</a></li>
+                    <li><a href="#depoimentos" class="nav-link"><i class="fas fa-star"></i> Depoimentos</a></li>
+                    <li><a href="#contato" class="nav-link"><i class="fas fa-envelope"></i> Contato</a></li>
+                    <li><a href="#download" class="nav-link download-btn"><i class="fas fa-download"></i> Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção principal (Hero) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Organize sua vida com facilidade</h1>
+                <p class="hero-subtitle">Transforme suas metas em conquistas com o TaskFlow. 
+                    Gerencie projetos, acompanhe tarefas e aumente sua produtividade.</p>
+                <div class="hero-cta">
+                    <button class="cta-btn primary"><i class="fas fa-rocket"></i> Comece agora</button>
+                    <button class="cta-btn secondary"><i class="fas fa-play"></i> Ver demonstração</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Recursos -->
+    <section id="recursos" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-cube"></i> Recursos Poderosos</h2>
+                <p>Descubra como o TaskFlow pode transformar sua produtividade</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks fa-2x"></i>
+                    </div>
+                    <h3>Gestão de Tarefas</h3>
+                    <p>Organize suas tarefas com listas personalizáveis, prioridades e prazos.</p>
+                    <a href="#" class="learn-more">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell fa-2x"></i>
+                    </div>
+                    <h3>Notificações Inteligentes</h3>
+                    <p>Receba alertas personalizados e nunca perca um prazo importante.</p>
+                    <a href="#" class="learn-more">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line fa-2x"></i>
+                    </div>
+                    <h3>Análise de Produtividade</h3>
+                    <p>Acompanhe seu progresso com relatórios detalhados e insights.</p>
+                    <a href="#" class="learn-more">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Preços -->
+    <section id="precos" class="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>
+                    <i class="fas fa-gem"></i>
+                    Planos TaskFlow
+                    <span class="accent-text">2025</span>
+                </h2>
+                <p>Escolha o plano perfeito para impulsionar sua produtividade</p>
+            </div>
+    
+            <div class="pricing-toggle" data-aos="fade-up" data-aos-delay="100">
+                <span class="toggle-label">Pagamento Mensal</span>
+                <label class="switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="slider">
+                        
+                    </span>
+                </label>
+                <span class="toggle-label">Pagamento Anual</span>
+                <div class="save-badge">
+                    <i class="fas fa-gift"></i>
+                    <span>Economize 20%</span>
+                </div>
+            </div>
+    
+            <div class="pricing-grid">
+                <!-- Plano Básico -->
+                <div class="price-card" data-plan="basic" data-aos="fade-up" data-aos-delay="200">
+                    <div class="price-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Básico</h3>
+                        <p class="plan-subtitle">Perfeito para começar</p>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="price-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>5 projetos ativos</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tarefas ilimitadas</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Calendário básico</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Suporte por email</span>
+                        </li>
+                    </ul>
+                    <button class="price-cta basic">
+                        <span class="btn-text">Começar Grátis</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+    
+                <!-- Plano Pro -->
+                <div class="price-card popular" data-plan="pro" data-aos="fade-up" data-aos-delay="300">
+                    <div class="popular-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Mais Popular</span>
+                    </div>
+                    <div class="price-header">
+                        <div class="plan-icon pro">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Pro</h3>
+                        <p class="plan-subtitle">Para profissionais exigentes</p>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="price-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Projetos ilimitados</span>
+                            <span class="feature-tag">Popular</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Colaboração em equipe</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Recursos avançados</span>
+                            <span class="feature-tag">Novo</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Suporte prioritário 24/7</span>
+                        </li>
+                    </ul>
+                    <button class="price-cta pro">
+                        <span class="btn-text">Começar Agora</span>
+                        <i class="fas fa-bolt"></i>
+                    </button>
+                </div>
+    
+                <!-- Plano Empresarial -->
+                <div class="price-card" data-plan="enterprise" data-aos="fade-up" data-aos-delay="400">
+                    <div class="price-header">
+                        <div class="plan-icon enterprise">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Empresarial</h3>
+                        <p class="plan-subtitle">Soluções personalizadas</p>
+                        <div class="price">
+                            <span class="currency">R$</span>
+                            <span class="amount">79</span>
+                            <span class="period">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="price-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tudo do plano Pro</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>API personalizada</span>
+                            <span class="feature-tag">Premium</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integrações avançadas</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Gerente dedicado</span>
+                        </li>
+                    </ul>
+                    <button class="price-cta enterprise">
+                        <span class="btn-text">Fale Conosco</span>
+                        <i class="fas fa-handshake"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção de Depoimentos -->
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> O que nossos usuários dizem</h2>
+                <p>Histórias reais de pessoas que transformaram sua produtividade</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="perfil 1.jpeg" alt="Foto do usuário" class="user-photo">
+                        <div class="user-info">
+                            <h4>Ana Silva</h4>
+                            <p><i class="fas fa-briefcase"></i> Empreendedora</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        <i class="fas fa-quote-left"></i>
+                        O TaskFlow revolucionou a forma como gerencio minha empresa. 
+                        A organização e produtividade aumentaram significativamente.
+                        <i class="fas fa-quote-right"></i>
+                    </p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Mais cards de depoimentos similares... -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Entre em Contato</h2>
+                <p>Estamos aqui para ajudar você a começar</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3><i class="fas fa-info-circle"></i> Informações de Contato</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contato@taskflow.com">contato@taskflow.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <address>São Paulo, SP - Brasil</address>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"><i class="fas fa-pen"></i> Assunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Mensagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Enviar Mensagem <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2><i class="fas fa-envelope-open-text"></i> Fique por dentro das novidades</h2>
+                <p>Receba dicas de produtividade e atualizações do TaskFlow</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-tasks logo-icon"></i>
+                        <span class="logo-text">TaskFlow</span>
+                    </div>
+                    <p>Transformando a maneira como você organiza sua vida e trabalho.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fas fa-cube"></i> Produto</h3>
+                    <ul>
+                        <li><a href="#recursos"><i class="fas fa-chevron-right"></i> Recursos</a></li>
+                        <li><a href="#precos"><i class="fas fa-chevron-right"></i> Preços</a></li>
+                        <li><a href="#download"><i class="fas fa-chevron-right"></i> Download</a></li>
+                        <li><a href="#updates"><i class="fas fa-chevron-right"></i> Atualizações</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fas fa-building"></i> Empresa</h3>
+                    <ul>
+                        <li><a href="#sobre"><i class="fas fa-chevron-right"></i> Sobre nós</a></li>
+                        <li><a href="#carreiras"><i class="fas fa-chevron-right"></i> Carreiras</a></li>
+                        <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="#imprensa"><i class="fas fa-chevron-right"></i> Imprensa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fas fa-headset"></i> Suporte</h3>
+                    <ul>
+                        <li><a href="#ajuda"><i class="fas fa-chevron-right"></i> Central de Ajuda</a></li>
+                        <li><a href="#tutoriais"><i class="fas fa-chevron-right"></i> Tutoriais</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#contato"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fas fa-shield-alt"></i> Legal</h3>
+                    <ul>
+                        <li><a href="#privacidade"><i class="fas fa-chevron-right"></i> Privacidade</a></li>
+                        <li><a href="#termos"><i class="fas fa-chevron-right"></i> Termos de Uso</a></li>
+                        <li><a href="#cookies"><i class="fas fa-chevron-right"></i> Política de Cookies</a></li>
+                        <li><a href="#compliance"><i class="fas fa-chevron-right"></i> Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p><i class="far fa-copyright"></i> 2024 TaskFlow. Todos os direitos reservados.</p>
+                </div>
+                <div class="app-stores">
+                    <a href="#" class="store-button">
+                        <img src="app-store-png-logo-33112.png" alt="Download na App Store">
+                    </a>
+                    <a href="#" class="store-button">
+                        <img src="google-play-png-logo-3798.png" alt="Download no Google Play">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Cookies consent -->
+    <div id="cookies-consent" class="cookies-banner">
+        <div class="cookies-content">
+            <p><i class="fas fa-cookie-bite"></i> Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+                <a href="#privacidade">Política de Privacidade</a>.</p>
+            <div class="cookies-buttons">
+                <button id="accept-cookies"><i class="fas fa-check"></i> Aceitar</button>
+                <button id="reject-cookies"><i class="fas fa-times"></i> Rejeitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
